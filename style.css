@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'B612', sans-serif;
+}
+
+a
+{
+    display: inline-block;
+}
+
+p
+{
+    color: black;
+}
+
+header
+{
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    
+}
+
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo
+{
+    width: 100px;
+}
+
+header .container a
+{
+    color: red;
+    text-decoration: none;
+    margin: 0 15px 0 15px;
+}
+
+.boton 
+{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.boton.boton-rojo
+{
+    color: bisque;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container
+{
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#Inicio
+{
+    position: relative;
+}
+
+#Inicio img
+{
+    width: 100%;
+    display: block;
+}
+
+#Inicio .bloque-inicio
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 400px;
+    text-align: center;
+    margin-left: -200px;
+}
+
+#Inicio .bloque-inicio h1
+{
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+#Inicio .bloque-inicio p
+{
+    color: whitesmoke;
+    font-size: 15px;
+}
