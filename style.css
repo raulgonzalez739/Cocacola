@@ -10,6 +10,7 @@ body
 a
 {
     display: inline-block;
+    text-decoration: none;
 }
 
 p
@@ -46,6 +47,68 @@ header .container nav a
     color: red;
     text-decoration: none;
     margin: 0 15px 0 15px;
+}
+
+header .container .hamb
+    {
+        display: none;
+    }
+
+footer.seccion
+{
+    background-color: black;
+    color: white;
+    padding-bottom: 0;
+}
+
+footer .barra-footer
+{
+    background-color: grey;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .logo-footer
+{
+    width: 100%;
+}
+
+footer p
+{
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer a
+{
+    color: white;   
+}
+
+footer ul
+{
+    padding-left: 0;
+    list-style: none;  
+    margin: 0;  
+}
+
+footer .redes   
+{
+    font-size: 30px;  
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .redes a
+{
+    margin: 0 7.5px;
+}
+
+footer ul li
+{
+    margin-bottom: 10px;
 }
 
 .boton 
@@ -140,6 +203,11 @@ header .container nav a
 {
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.columna-25
+{
+    width: 25%;
 }
 
 .columna-33
@@ -330,3 +398,111 @@ header .container nav a
  {
     margin-bottom: 0;
  }
+
+ @media(max-width: 767px)
+ {
+    body
+    {
+        font-size: 15px;
+    }
+
+    header .container nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s ease;
+        transform: translateX(100%);
+    }
+
+    header .container nav a
+    {
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    header .container .hamb
+    {
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+
+    form .boton.boton-negro
+    {
+        width: 100%;
+    }
+
+    footer
+    {
+        text-align: center;
+    }
+
+    footer .logo-footer
+    {
+        width: 50%;
+    }
+
+    .container
+    {
+        width: 100%;
+    }
+
+    .columna-mobile-100
+    {
+        width: 100%;
+    }
+
+    .columna-mobile-50
+    {
+        width: 50%;
+    }
+
+    .empujar-mobile-0
+    {
+        margin-left: 0;
+    }
+
+    .sinpadding-mobile
+    {
+        padding: 0;
+    }
+
+    #Inicio
+    {
+        height: 100vh;
+    }
+
+    #Inicio img
+    {
+        height: 100%;
+        object-fit: cover;
+        position: center;
+    }
+
+    #Servicios .bloque-servicio
+    {
+        margin-bottom: 15px;
+    }
+
+    #Contactenos
+    {
+        padding: 0;
+    }
+
+    #Contactenos iframe
+    {
+        position: relative;
+        height: 50vh;
+    }
+    
+}
